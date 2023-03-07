@@ -26,6 +26,7 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.1-service-oplus
 
 # Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
@@ -33,9 +34,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Doze
 PRODUCT_PACKAGES += \
     OplusDoze
-
-# Overlays
-PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -89,7 +87,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := RMX3491,RED8C1,RED8C1L1
+TARGET_OTA_ASSERT_DEVICE := RMX3491,RMX3493,RED8C1,RED8C1L1
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/realme/golf/golf-vendor.mk)
