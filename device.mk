@@ -26,6 +26,11 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.1-service-oplus
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
+
+# Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Partitions
