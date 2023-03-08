@@ -45,7 +45,6 @@ PRODUCT_CHARACTERISTICS := nosdcard
 # Rootdir
 PRODUCT_PACKAGES += \
     init.class_main.sh \
-    install-recovery.sh \
     qca6234-service.sh \
     init.qcom.coex.sh \
     init.qcom.sh \
@@ -66,7 +65,7 @@ PRODUCT_PACKAGES += \
     init.qti.media.sh \
 
 PRODUCT_PACKAGES += \
-    fstab.emmc \
+    fstab.qcom \
     vendor.oem_ftm.rc \
     init.qcom.usb.rc \
     init.qcom.rc \
@@ -77,7 +76,7 @@ PRODUCT_PACKAGES += \
     vendor.oem_ftm_svc_disable.rc \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_COPY_OUT_RAMDISK)/fstab.emmc
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
