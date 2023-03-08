@@ -2,7 +2,7 @@
 #<src>                           <mnt_point>    <type>          <mnt_flags and options>             <fs_mgr_flags>
 
 # Logical Partitions
-system                  /system         ext4      ro,barrier=1            wait,logical,avb=vbmeta_system,first_stage_mount
+system                  /system         ext4      ro,barrier=1            wait,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-developer-gsi.avbpubkey:/avb/r-developer-gsi.avbpubkey:/avb/s-developer-gsi.avbpubkey
 system_ext              /system_ext     ext4      ro,barrier=1            wait,logical,avb=vbmeta_system,first_stage_mount
 vendor                  /vendor         erofs     ro,barrier=1            wait,logical,avb=vbmeta_vendor,first_stage_mount
 product                 /product        ext4      ro,barrier=1            wait,logical,avb=vbmeta_system,first_stage_mount
