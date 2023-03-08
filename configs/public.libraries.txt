@@ -1,0 +1,52 @@
+# vendor
+libqti-perfd-client.so
+libadsprpc.so
+libcdsprpc.so
+libsdsprpc.so
+libfastcvopt.so
+liblistensoundmodel2.so
+libOpenCL.so
+libAlgoProcess.so
+libancbase_rt_bokeh.so
+libAncHumBokeh.so
+libsnpe_loader.so
+libAncHumVideoBase.so
+libmidasserviceintf.so
+libAncFilter.so
+
+# system
+libandroid.so
+libaaudio.so
+libamidi.so
+libbinder_ndk.so
+libc.so
+libcamera2ndk.so
+libdl.so
+libEGL.so
+libGLESv1_CM.so
+libGLESv2.so
+libGLESv3.so
+libicu.so
+libicui18n.so
+libicuuc.so
+libjnigraphics.so
+liblog.so
+libmediandk.so
+libm.so
+libnativehelper.so
+libnativewindow.so
+libneuralnetworks.so nopreload
+libOpenMAXAL.so
+libOpenSLES.so
+libRS.so
+libstdc++.so
+libsync.so
+libvulkan.so
+libwebviewchromium_plat_support.so
+libz.so
+
+# system - qti
+libvraudio_client.qti.so
+libbinauralrenderer_wrapper.qti.so
+libhoaeffects.qti.so
+libQOC.qti.so
